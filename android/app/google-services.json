@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333783990965",
+    "project_id": "pushnotification-75e9f",
+    "storage_bucket": "pushnotification-75e9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333783990965:android:1f879b1ca52da0ab0234fc",
+        "android_client_info": {
+          "package_name": "com.edersonpinheiro.push_notification_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333783990965-0ue2lijoganrnte9i2inn229811icfuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjTTCAe7WYqSeHDz5NfqEXbhuIzGBDUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333783990965-0ue2lijoganrnte9i2inn229811icfuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
