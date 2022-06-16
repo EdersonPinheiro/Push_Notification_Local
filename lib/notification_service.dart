@@ -71,17 +71,18 @@ class NotificationService {
   showNotification(CustomNotification notification) {
     final date = DateTime.now().add(Duration(seconds: 5));
     localNotificationsPlugin.zonedSchedule(
-      notification.id,
-      notification.title,
-      notification.body,
-      tz.TZDateTime.from(date, tz.local),
-      NotificationDetails(
-        android: androidDetails,
-      ),
-      payload: notification.payload,
-      androidAllowWhileIdle: true, // aparecer notificação mesmo em segundo plano
-      uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime
-    );
+        notification.id,
+        notification.title,
+        notification.body,
+        tz.TZDateTime.from(date, tz.local),
+        NotificationDetails(
+          android: androidDetails,
+        ),
+        payload: notification.payload,
+        androidAllowWhileIdle:
+            true, // aparecer notificação mesmo em segundo plano
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime);
   }
 
   checkForNotifications() async {

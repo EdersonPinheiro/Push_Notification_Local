@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:provider/provider.dart';
 
 import 'notification_service.dart';
+import 'pages/service/firebase_messaging_service.dart';
 import 'routes.dart';
 
 class App extends StatefulWidget {
@@ -15,7 +16,13 @@ class _AppState extends State<App> {
   @override
   void initState() {
     super.initState();
+    InitializeFirebaseMessaging();
     checkNotifications();
+  }
+
+  InitializeFirebaseMessaging() async {
+    await Provider.of<FirebaseMessagingService>(context, listen: false)
+        .initialize();
   }
 
   checkNotifications() async {
